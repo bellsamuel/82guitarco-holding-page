@@ -1,0 +1,41 @@
+# -------------------------------------------------------------------------
+# WELCOME SEARCH ENGINES & AI SEARCH
+# This allows Googlebot and ChatGPT Search to index your site and cite you 
+# in AI Overviews, bringing you live traffic.
+# -------------------------------------------------------------------------
+User-agent: *
+Allow: /
+Disallow: /404.html
+Disallow: /README.md
+
+# -------------------------------------------------------------------------
+# BLOCK AI MODEL TRAINING (THE DATA SCRAPERS)
+# This prevents companies from stealing your content to train future LLMs
+# without giving you traffic or links.
+# -------------------------------------------------------------------------
+# Blocks OpenAI's core training crawler
+User-agent: GPTBot
+Disallow: /
+
+# Blocks Google's Gemini training crawler (Does NOT affect AI Overviews)
+User-agent: Google-Extended
+Disallow: /
+
+# Blocks Anthropic / Claude training crawlers
+User-agent: Anthropic-ai
+User-agent: Claude-Web
+Disallow: /
+
+# Blocks Apple's AI training crawler
+User-agent: Applebot-Extended
+Disallow: /
+
+# Blocks Perplexity's aggressive caching crawler
+User-agent: PerplexityBot
+Disallow: /
+
+# -------------------------------------------------------------------------
+# SITE MAP LOCATION
+# Replace 'yourdomain.com' with your actual custom domain
+# -------------------------------------------------------------------------
+Sitemap: https://82guitarco.com/sitemap.xml
