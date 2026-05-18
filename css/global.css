@@ -1,0 +1,35 @@
+/* ========================================== */
+/* GLOBAL STYLES                              */
+/* ========================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-primary);
+}
+
+/* Universal Contextual Text Links */
+p a, 
+.about-text a, 
+article a {
+  color: inherit; /* Inherits the paragraph's text color automatically */
+  text-decoration: none;
+  font-weight: 600; /* Makes the link slightly bolder so it stands out in prose */
+  border-bottom: 1px solid currentColor; /* Automatically matches text color */
+  opacity: 0.85; /* Softens the resting state slightly for an elegant look */
+  padding-bottom: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Global Hover State */
+p a:hover, 
+.about-text a:hover, 
+article a:hover {
+  color: #ffb704; /* Wakes up with your beautiful brand gold on hover */
+  border-bottom-color: #ffb704; /* Border turns gold to match */
+  opacity: 1; /* Fully brightens on interaction */
+}

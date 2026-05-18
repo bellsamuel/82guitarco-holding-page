@@ -1,0 +1,94 @@
+/* ========================================== */
+/* SERVICES COMPONENT                         */
+/* ========================================== */
+.services-section {
+  max-width: 1200px;
+  margin: 80px auto 40px auto;
+  padding: 0 20px;
+}
+
+.services-main-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.services-disclaimer {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--color-muted);
+  margin-bottom: 40px;
+}
+
+/* 1 column on mobile, 3 columns on desktop */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.service-card {
+  background-color: #fdfdfd;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-standard);
+  padding: 30px;
+  box-shadow: 0 4px 10px var(--color-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Subtle highlight wrapper to draw eyes to your core setup option */
+.featured-card {
+  border: 2px solid var(--color-primary);
+  position: relative;
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.service-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.service-price {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+.service-tagline {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+}
+
+.featured-card .service-tagline {
+  color: var(--color-primary);
+}
+
+.service-desc {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: var(--spacing-text);
+  color: #333;
+}
+
+/* DESKTOP CONFIGURATION */
+@media screen and (min-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

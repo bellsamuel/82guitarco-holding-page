@@ -1,0 +1,25 @@
+/* ========================================== */
+/* DESIGN TOKENS (CUSTOM PROPERTIES)          */
+/* ========================================== */
+:root {
+  /* Colors */
+  --color-primary: #1e2a45;
+  --color-primary-hover: #2a3b5c;
+  --color-white: #ffffff;
+  --color-muted: #555555;
+  --color-border: #dddddd;
+  --color-shadow: rgba(0, 0, 0, 0.05);
+
+  /* Fonts */
+  --font-heading: "Archivo Black", sans-serif;
+  --font-body: "Inter", sans-serif; /* Your loaded secondary body font */
+  --font-accent: "DM Serif Display", serif;
+
+  /* Layout & Spacing */
+  --radius-standard: 12px;
+  --radius-button: 6px;
+  --spacing-text: 1.6;
+}
+
+
+
